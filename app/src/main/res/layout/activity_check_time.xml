@@ -7,4 +7,93 @@
     android:background="@color/Main"
     tools:context=".CheckTime">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="357dp"
+        android:layout_height="332dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/set_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/and_or_swith"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <CheckBox
+            android:id="@+id/checkbox_1st_class"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="1교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_2nd_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="2교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_3rd_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="3교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_4th_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="4교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_5th_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="5교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_6th_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="6교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_7th_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="7교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_8th_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="7교시" />
+
+        <CheckBox
+            android:id="@+id/checkbox_9th_class"
+            android:layout_width="360dp"
+            android:layout_height="34dp"
+            android:text="9교시" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:text="설정완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Switch
+        android:id="@+id/and_or_swith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택된 시간만 보기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="222dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
