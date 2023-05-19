@@ -8,83 +8,83 @@
     tools:context=".CheckBuilding">
 
     <Button
-        android:id="@+id/seoul_town6"
+        android:id="@+id/seoul_town12"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="사이버관"
+        android:text="공학관"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town5"
+        app:layout_constraintTop_toBottomOf="@+id/seoul_town11"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/seoul_town5"
+        android:id="@+id/seoul_town11"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="법학관"
+        android:text="인문경상관"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town4"
+        app:layout_constraintTop_toBottomOf="@+id/seoul_town10"
         app:layout_constraintVertical_bias="0.01" />
 
     <Button
-        android:id="@+id/seoul_town4"
+        android:id="@+id/seoul_town10"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="사회과학관"
+        android:text="자연과학관"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town3"
+        app:layout_constraintTop_toBottomOf="@+id/seoul_town9"
         app:layout_constraintVertical_bias="0.024" />
 
     <Button
-        android:id="@+id/seoul_town3"
+        android:id="@+id/seoul_town9"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="교수학습개발원"
+        android:text="교양관"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town2"
+        app:layout_constraintTop_toBottomOf="@+id/seoul_town8"
         app:layout_constraintVertical_bias="0.012" />
 
     <Button
-        android:id="@+id/seoul_town2"
+        android:id="@+id/seoul_town8"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="인문과학관"
+        android:text="어문학관"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town"
+        app:layout_constraintTop_toBottomOf="@+id/seoul_town7"
         app:layout_constraintVertical_bias="0.006" />
 
     <Button
-        android:id="@+id/seoul_town"
+        android:id="@+id/seoul_town7"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="40dp"
-        android:text="본관"
+        android:text="백년관"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,11 +92,11 @@
         app:layout_constraintVertical_bias="0.461" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="[서울캠퍼스]\n원하는 건물을 선택해주세요!"
+        android:text="[글로벌캠퍼스]\n 원하는 건물을 선택해주세요!"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
