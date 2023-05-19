@@ -1,5 +1,6 @@
 package com.oss6team.emptylecturefinder
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
@@ -30,6 +31,11 @@ class CheckTime : AppCompatActivity() {
 
         if (class1_checkBox.isChecked){
 
+        }
+
+        submit.setOnClickListener {
+            val intent = Intent(this@CheckTime, LectureFound::class.java)
+            startActivity(intent)
         }
     }
 }
