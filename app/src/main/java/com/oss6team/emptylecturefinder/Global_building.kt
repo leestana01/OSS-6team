@@ -1,11 +1,11 @@
 package com.oss6team.emptylecturefinder
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-class CheckBuilding : AppCompatActivity() {
+class Global_building : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_check_building)
+        setContentView(R.layout.activity_check_building_global)
     }
 }
