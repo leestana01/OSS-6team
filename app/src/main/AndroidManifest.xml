@@ -53,6 +53,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name="com.oss6team.emptylecturefinder.Seoul"/>
+        <activity android:name="com.oss6team.emptylecturefinder.Global"/>
+        <activity android:name="com.oss6team.emptylecturefinder.Seoul_building"/>
+        <activity android:name="com.oss6team.emptylecturefinder.Global_building"/>
     </application>
 
 </manifest>

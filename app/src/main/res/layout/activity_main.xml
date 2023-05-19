@@ -8,13 +8,46 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textColor="@color/white"
+        android:text="어떤 캠퍼스를 이용하시나요?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
 
+    <Button
+        android:id="@+id/global_btn"
+        android:layout_width="145dp"
+        android:layout_height="328dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onButton2Clicked"
+        android:text="글로벌 캠퍼스"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/seoul_btn"
+        android:layout_width="145dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onButton1Clicked"
+        android:text="서울 캠퍼스"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

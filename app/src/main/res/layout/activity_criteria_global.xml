@@ -8,7 +8,7 @@
     tools:context=".Criteria">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="무엇을 기준으로 빈 강의실을 찾아드릴까요?"
@@ -20,12 +20,12 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <Button
-        android:id="@+id/seoul_time_btn"
+        android:id="@+id/global_time_btn"
         android:layout_width="145dp"
         android:layout_height="328dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="40dp"
-        android:onClick="onButton4Clicked"
+        android:onClick="onButton6Clicked"
         android:text="시간"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +36,12 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/seoul_town_btn"
+        android:id="@+id/global_town_btn"
         android:layout_width="145dp"
         android:layout_height="328dp"
         android:layout_marginStart="35dp"
         android:layout_marginBottom="40dp"
-        android:onClick="onButton3Clicked"
+        android:onClick="onButton5Clicked"
         android:text="건물"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
