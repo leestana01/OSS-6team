@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="357dp"
-        android:layout_height="332dp"
+        android:layout_height="306dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/set_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,51 +23,60 @@
             android:id="@+id/checkbox_1st_class"
             android:layout_width="match_parent"
             android:layout_height="34dp"
+            android:background="@drawable/custom_checkbox"
             android:text="1교시" />
 
         <CheckBox
             android:id="@+id/checkbox_2nd_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
+            android:background="@drawable/custom_checkbox"
             android:text="2교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_3rd_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
             android:text="3교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_4th_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
             android:text="4교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_5th_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
             android:text="5교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_6th_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
             android:text="6교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_7th_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
             android:text="7교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_8th_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
             android:text="7교시" />
 
         <CheckBox
+            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_9th_class"
             android:layout_width="360dp"
             android:layout_height="34dp"
