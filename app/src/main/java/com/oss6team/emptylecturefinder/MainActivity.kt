@@ -7,9 +7,11 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatDelegate
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) //다크모드 비활성화
         setContentView(R.layout.activity_main)
         val seoul_btn = findViewById<View>(R.id.seoul_btn) as Button
