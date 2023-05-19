@@ -2,10 +2,4 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name="TitleBar">#474A6E</color>
-    <color name="TitleBar2">#3F4367</color>
-    <color name="Main">#262A50</color>
-    <color name="Main2">#1F2243</color>
-    <color name="Object">#323657</color>
 </resources>

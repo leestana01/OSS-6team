@@ -2,30 +2,34 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hi"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tag"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.407" />
+    android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/seoul_btn"
+        android:id="@+id/seoul_time_btn"
+        android:layout_width="145dp"
+        android:layout_height="328dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onButton4Clicked"
+        android:text="@string/title1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/seoul_town_btn"
         android:layout_width="145dp"
         android:layout_height="328dp"
         android:layout_marginStart="35dp"
         android:layout_marginBottom="40dp"
-        android:onClick="onButton1Clicked"
-        android:text="서울 캠퍼스"
+        android:onClick="onButton3Clicked"
+        android:text="건물"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -34,19 +38,16 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="HardcodedText,MissingConstraints" />
 
-    <Button
-        android:id="@+id/global_btn"
-        android:layout_width="145dp"
-        android:layout_height="328dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="40dp"
-        android:onClick="onButton2Clicked"
-        android:text="@string/title"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="무엇을 기준으로 빈 강의실을 찾아드릴까요?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
