@@ -8,7 +8,7 @@
     tools:context=".Seoul_building">
 
     <Button
-        android:id="@+id/seoul_town6"
+        android:id="@+id/btn_seoul_town6"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -18,11 +18,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seoul_town5"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/seoul_town5"
+        android:id="@+id/btn_seoul_town5"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -32,11 +32,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seoul_town4"
         app:layout_constraintVertical_bias="0.01" />
 
     <Button
-        android:id="@+id/seoul_town4"
+        android:id="@+id/btn_seoul_town4"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -46,11 +46,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seoul_town3"
         app:layout_constraintVertical_bias="0.024" />
 
     <Button
-        android:id="@+id/seoul_town3"
+        android:id="@+id/btn_seoul_town3"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -60,11 +60,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seoul_town2"
         app:layout_constraintVertical_bias="0.012" />
 
     <Button
-        android:id="@+id/seoul_town2"
+        android:id="@+id/btn_seoul_town2"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
@@ -74,11 +74,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seoul_town"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seoul_town1"
         app:layout_constraintVertical_bias="0.006" />
 
     <Button
-        android:id="@+id/seoul_town"
+        android:id="@+id/btn_seoul_town1"
         android:layout_width="320dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
