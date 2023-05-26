@@ -7,17 +7,52 @@
     android:background="@color/Main"
     tools:context=".LectureFound">
 
-    <TextView
-        android:gravity="center"
-        android:textColor="#ffffffff"
-        android:fontFamily="@font/suite"
-        android:id="@+id/textView"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:text="원하시는 빈 강의실을 찾았어요!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="76dp" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <!-- Table Header -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/TitleBar"
+                android:textColor="@android:color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Classroom"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Times"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- The content will be added dynamically in the Kotlin code. -->
+
+        </TableLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
