@@ -20,14 +20,14 @@ class LectureFound : AppCompatActivity() {
         tableLayout = findViewById(R.id.tableLayout)
 
         val campus = intent.getIntExtra("campus", 0)
-        val building = intent.getIntExtra("building", -1)
+        val building = intent.getStringExtra("building")
         val lecture = intent.getIntegerArrayListExtra("lecture") ?: arrayListOf()
 
         val fileResId = if (campus == 0) R.raw.seoul_remaining else R.raw.global_remaining
 
         val data = readDataFromFile(fileResId)
 
-        val filteredByBuilding = if (building != -1) {
+        val filteredByBuilding = if (building != null) {
             data.filter { it.classroom.startsWith(building.toString()) }
         } else {
             data
@@ -79,25 +79,28 @@ class LectureFound : AppCompatActivity() {
 
     private fun displayDataInTable(data: List<Classroom>) {
         data.forEach { classroom ->
-            val row = TableRow(this)
-            val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
-            row.layoutParams = layoutParams
+            if (classroom.times.isNotEmpty()) { // 추가된 부분
+                val row = TableRow(this)
+                val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
+                row.layoutParams = layoutParams
 
-            val textViewClassroom = TextView(this)
-            textViewClassroom.text = classroom.classroom
-            row.addView(textViewClassroom)
+                val textViewClassroom = TextView(this)
+                textViewClassroom.text = classroom.classroom
+                row.addView(textViewClassroom)
 
-            val textViewDay = TextView(this)
-            textViewDay.text = classroom.day
-            row.addView(textViewDay)
+                val textViewDay = TextView(this)
+                textViewDay.text = classroom.day
+                row.addView(textViewDay)
 
-            val textViewTimes = TextView(this)
-            textViewTimes.text = classroom.times.joinToString(", ")
-            row.addView(textViewTimes)
+                val textViewTimes = TextView(this)
+                textViewTimes.text = classroom.times.joinToString(", ")
+                row.addView(textViewTimes)
 
-            tableLayout.addView(row)
+                tableLayout.addView(row)
+            }
         }
     }
+
 
     data class Classroom(val classroom: String, val day: String, val times: List<Int>)
 }
