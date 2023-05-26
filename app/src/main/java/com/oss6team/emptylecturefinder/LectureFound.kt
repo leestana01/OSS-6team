@@ -19,11 +19,11 @@ class LectureFound : AppCompatActivity() {
 
         tableLayout = findViewById(R.id.tableLayout)
 
-        val campus = intent.getIntExtra("campus", 0)
+        val campus = intent.getStringExtra("campus")
         val building = intent.getStringExtra("building")
         val lecture = intent.getIntegerArrayListExtra("lecture") ?: arrayListOf()
 
-        val fileResId = if (campus == 0) R.raw.seoul_remaining else R.raw.global_remaining
+        val fileResId = if (campus == "0") R.raw.seoul_remaining else R.raw.global_remaining
 
         val data = readDataFromFile(fileResId)
 
