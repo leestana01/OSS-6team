@@ -11,7 +11,11 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="무엇을 기준으로 빈 강의실을 찾아드릴까요?"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="무엇을 기준으로\n 빈 강의실을 찾아드릴까요?"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -19,35 +23,64 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4" />
 
-    <Button
-        android:id="@+id/global_time_btn"
+    <FrameLayout
         android:layout_width="145dp"
         android:layout_height="328dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="40dp"
-        android:onClick="onButton6Clicked"
-        android:text="시간"
+        android:layout_margin="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="1.0">
 
-    <Button
-        android:id="@+id/global_town_btn"
+        <ImageButton
+            android:id="@+id/global_time_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onButton2Clicked"
+            android:src="@drawable/time_img"
+            android:scaleType="centerCrop"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="시간"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="145dp"
         android:layout_height="328dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginBottom="40dp"
-        android:onClick="onButton5Clicked"
-        android:text="건물"
+        android:layout_margin="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/global_town_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal"
+            android:onClick="onButton1Clicked"
+            android:src="@drawable/building_img"
+            android:scaleType="centerCrop"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="건물"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
