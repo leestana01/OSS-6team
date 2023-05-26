@@ -14,7 +14,7 @@ class Global_building : AppCompatActivity() {
         val btn_global_town1 = findViewById<View>(R.id.btn_global_town1) as Button
         btn_global_town1.setOnClickListener {
             val campus=1;
-            val building=11;
+            val building=0;
 
             val intent = Intent(this@Global_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
@@ -24,7 +24,7 @@ class Global_building : AppCompatActivity() {
         val btn_global_town2 = findViewById<View>(R.id.btn_global_town2) as Button
         btn_global_town2.setOnClickListener {
             val campus=1;
-            val building=12;
+            val building=1;
 
             val intent = Intent(this@Global_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
@@ -34,7 +34,7 @@ class Global_building : AppCompatActivity() {
         val btn_global_town3 = findViewById<View>(R.id.btn_global_town3) as Button
         btn_global_town3.setOnClickListener {
             val campus=1;
-            val building=13;
+            val building=2;
 
             val intent = Intent(this@Global_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
@@ -44,7 +44,7 @@ class Global_building : AppCompatActivity() {
         val btn_global_town4 = findViewById<View>(R.id.btn_global_town4) as Button
         btn_global_town4.setOnClickListener {
             val campus=1;
-            val building=14;
+            val building=3;
 
             val intent = Intent(this@Global_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
@@ -54,7 +54,7 @@ class Global_building : AppCompatActivity() {
         val btn_global_town5 = findViewById<View>(R.id.btn_global_town5) as Button
         btn_global_town5.setOnClickListener {
             val campus=1;
-            val building=15;
+            val building=4;
 
             val intent = Intent(this@Global_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
@@ -64,7 +64,7 @@ class Global_building : AppCompatActivity() {
         val btn_global_town6 = findViewById<View>(R.id.btn_global_town6) as Button
         btn_global_town6.setOnClickListener {
             val campus=1;
-            val building=16;
+            val building=5;
 
             val intent = Intent(this@Global_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
