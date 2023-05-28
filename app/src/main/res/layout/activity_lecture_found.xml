@@ -7,7 +7,7 @@
     android:background="@color/Main"
     tools:context=".LectureFound">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp">
@@ -15,39 +15,17 @@
         <TableLayout
             android:id="@+id/tableLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:stretchColumns="*">
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:background="@drawable/table_background"
+            android:padding="5dp">
 
             <!-- Table Header -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/TitleBar"
-                android:textColor="@android:color/white">
+                style="@style/TableRowStyle">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Classroom"
-                    android:padding="5dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Day"
-                    android:padding="5dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Times"
-                    android:padding="5dp"
-                    android:textStyle="bold" />
             </TableRow>
 
             <!-- The content will be added dynamically in the Kotlin code. -->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TableLayoutStyle">
+        <item name="android:background">#F5F5F5</item> <!-- 배경색 설정 -->
+        <item name="android:padding">5dp</item> <!-- 셀 안쪽 여백 설정 -->
+    </style>
+
+    <style name="TableRowStyle" >
+        <item name="android:background">@drawable/row_background</item> <!-- 행 배경 설정 -->
+        <item name="android:layout_marginTop">1dp</item> <!-- 행 상단 여백 설정 -->
+        <item name="android:layout_marginBottom">1dp</item> <!-- 행 하단 여백 설정 -->
+    </style>
+
+</resources>
