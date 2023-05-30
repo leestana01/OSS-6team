@@ -30,7 +30,7 @@
             android:fontFamily="@font/suite"
             android:textSize="18dp"
 
-            android:text="1교시" />
+            android:text="@string/Time_lec1" />
 
         <CheckBox
             android:id="@+id/checkbox_2nd_class"
@@ -40,7 +40,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="2교시" />
+            android:text="@string/Time_lec2" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -50,7 +50,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="3교시" />
+            android:text="@string/Time_lec3" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -60,7 +60,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="4교시" />
+            android:text="@string/Time_lec4" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -70,7 +70,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="5교시" />
+            android:text="@string/Time_lec5" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -80,7 +80,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="6교시" />
+            android:text="@string/Time_lec6" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -90,7 +90,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="7교시" />
+            android:text="@string/Time_lec7" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -101,7 +101,7 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="8교시" />
+            android:text="@string/Time_lec8" />
 
         <CheckBox
             android:background="@drawable/custom_checkbox"
@@ -111,14 +111,14 @@
             android:textColor="#ffffffff"
             android:fontFamily="@font/suite"
             android:textSize="18dp"
-            android:text="9교시" />
+            android:text="@string/Time_lec9" />
     </LinearLayout>
 
     <Button
         android:id="@+id/set_button"
         android:layout_width="359dp"
         android:layout_height="55dp"
-        android:text="설정완료"
+        android:text="@string/Time_Set_Complete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -130,10 +130,11 @@
         android:id="@+id/and_or_swith"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="선택한 시"
+        android:text="@string/Time_Config"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="222dp" />
+        tools:layout_editor_absoluteY="222dp"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
