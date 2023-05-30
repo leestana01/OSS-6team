@@ -13,6 +13,13 @@
         android:theme="@style/Theme.EmptyLectureFinder"
         tools:targetApi="31">
         <activity
+            android:name=".Favorites"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CheckTime"
             android:exported="false">
             <meta-data
@@ -53,10 +60,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name="com.oss6team.emptylecturefinder.Seoul"/>
-        <activity android:name="com.oss6team.emptylecturefinder.Global"/>
-        <activity android:name="com.oss6team.emptylecturefinder.Seoul_building"/>
-        <activity android:name="com.oss6team.emptylecturefinder.Global_building"/>
+        <activity android:name=".Seoul" />
+        <activity android:name=".Global" />
+        <activity android:name=".Seoul_building" />
+        <activity android:name=".Global_building" />
     </application>
 
 </manifest>

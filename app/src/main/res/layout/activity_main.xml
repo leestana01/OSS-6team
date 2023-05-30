@@ -7,6 +7,32 @@
     android:background="@color/Main"
     tools:context=".MainActivity">
 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:background="@drawable/favorite_button"
+        android:text="@string/Favorite_Button"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:shadowColor="#000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.5"
+        tools:ignore="MissingClass" />
+
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
