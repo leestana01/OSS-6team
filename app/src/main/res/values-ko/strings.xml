@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HUFS 빈 강의실 찾기</string>
+
+    <string name="Notice_Campus_Choice">어떤 캠퍼스를 이용하시나요?</string>
+    <string name="Favorite_Button">저장된\n 즐겨찾기 목록</string>
+    <string name="Campus_Global">글로벌 캠퍼스</string>
+    <string name="Campus_Seoul">서울 캠퍼스</string>
+
+    <string name="Criteria_Choice">무엇을 기준으로\n 빈 강의실을 찾아드릴까요?</string>
+    <string name="Criteria_Time">시간</string>
+    <string name="Criteria_Building">건물</string>
+
+    <string name="Building_Seoul_Choice">[서울캠퍼스]\n원하는 건물을 선택해주세요!</string>
+    <string name="Seoul_1">사이버관</string>
+    <string name="Seoul_2">법학관</string>
+    <string name="Seoul_3">사회과학관</string>
+    <string name="Seoul_4">교수학습개발원</string>
+    <string name="Seoul_5">인문과학관</string>
+    <string name="Seoul_6">본관</string>
+
+    <string name="Building_Global_Choice">[글로벌캠퍼스]\n 원하는 건물을 선택해주세요!</string>
+    <string name="Global_1">공학관</string>
+    <string name="Global_2">인문경상관</string>
+    <string name="Global_3">자연과학관</string>
+    <string name="Global_4">교양관</string>
+    <string name="Global_5">어문학관</string>
+    <string name="Global_6">백년관</string>
+
+    <string name="Time_Config">하나만 만족해도 찾기</string>
+    <string name="Time_lec1">1교시</string>
+    <string name="Time_lec2">2교시</string>
+    <string name="Time_lec3">3교시</string>
+    <string name="Time_lec4">4교시</string>
+    <string name="Time_lec5">5교시</string>
+    <string name="Time_lec6">6교시</string>
+    <string name="Time_lec7">7교시</string>
+    <string name="Time_lec8">8교시</string>
+    <string name="Time_lec9">9교시</string>
+    <string name="Time_Set_Complete">설정완료</string>
+
+    <string name="Found_Lecture">조건에 맞는 빈 강의실을 찾았습니다!</string>
+    <string name="Favorites_Lecture">즐겨찾기 목록입니다!</string>
+    <string name="Found_Check">체크</string>
+    <string name="Found_Classroom">강의실</string>
+    <string name="Found_Day">요일</string>
+    <string name="Found_Times">시간(교시)</string>
+    <string name="Save_CheckBox">체크목록 저장</string>
+    <string name="Delete_CheckBox">체크목록 **삭제**</string>
+    <string name="Save_Complete">즐겨찾기에 저장되었습니다!</string>
+    <string name="Delete_Complete">즐겨찾기에서 삭제되었습니다!</string>
+
+</resources>
