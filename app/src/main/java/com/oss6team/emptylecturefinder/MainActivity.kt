@@ -1,11 +1,11 @@
 package com.oss6team.emptylecturefinder
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 
 
@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) //다크모드 비활성화
+
         setContentView(R.layout.activity_main)
+
         val seoul_btn = findViewById<View>(R.id.seoul_btn) as ImageButton
         seoul_btn.setOnClickListener {
             val intent = Intent(this@MainActivity, Seoul::class.java)
@@ -26,6 +28,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val favoriteButton = findViewById<Button>(R.id.favoriteButton)
+        favoriteButton.setOnClickListener { // 즐겨찾기 액티비티로 이동하는 코드 작성
+            val intent = Intent(this@MainActivity, Favorites::class.java)
+            startActivity(intent)
+        }
 
 
     }
