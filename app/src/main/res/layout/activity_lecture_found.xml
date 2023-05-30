@@ -17,18 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:stretchColumns="*"
-            android:background="@drawable/table_background"
-            android:padding="5dp">
+            style="@style/TableLayoutStyle">
 
-            <!-- Table Header -->
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/TableRowStyle">
 
             </TableRow>
-
-            <!-- The content will be added dynamically in the Kotlin code. -->
 
         </TableLayout>
 

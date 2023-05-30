@@ -2,12 +2,16 @@ package com.oss6team.emptylecturefinder
 
 import android.graphics.Color
 import android.graphics.Typeface
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.TypedValue
+import android.view.ContextThemeWrapper
+import android.view.Gravity
 import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -97,25 +101,22 @@ class LectureFound : AppCompatActivity() {
         val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
         headerRow.layoutParams = layoutParams
 
-        val columnHeaderClassroom = createTableHeaderTextView("Classroom")
+        val columnHeaderClassroom = createTableHeaderTextView(R.string.classroom)
+        val columnHeaderDay = createTableHeaderTextView(R.string.day)
+        val columnHeaderTimes = createTableHeaderTextView(R.string.times)
+
         headerRow.addView(columnHeaderClassroom)
-
-        val columnHeaderDay = createTableHeaderTextView("Day")
         headerRow.addView(columnHeaderDay)
-
-        val columnHeaderTimes = createTableHeaderTextView("Times")
         headerRow.addView(columnHeaderTimes)
 
         return headerRow
     }
 
-    private fun createTableHeaderTextView(text: String): TextView {
-        val textView = TextView(this)
-        textView.text = text
-        textView.setPadding(5.dpToPx(), 5.dpToPx(), 5.dpToPx(), 5.dpToPx())
-        textView.setTextColor(Color.WHITE)
-        textView.setTypeface(null, Typeface.BOLD)
-        textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP,20.0f)
+    private fun createTableHeaderTextView(textResource: Int): TextView {
+        val contextThemeWrapper = ContextThemeWrapper(this, R.style.HeaderViewStyle)
+        val textView = TextView(contextThemeWrapper)
+        textView.text = getString(textResource)
+
         val layoutParams = TableRow.LayoutParams(
             TableRow.LayoutParams.WRAP_CONTENT,
             TableRow.LayoutParams.WRAP_CONTENT
@@ -123,13 +124,12 @@ class LectureFound : AppCompatActivity() {
         layoutParams.setMargins(2.dpToPx(), 2.dpToPx(), 2.dpToPx(), 2.dpToPx())
         textView.layoutParams = layoutParams
 
-        textView.setBackgroundResource(R.drawable.cell_background)
-
         return textView
     }
 
     private fun createDataRow(classroom: Classroom): TableRow {
-        val row = TableRow(this)
+        val contextThemeWrapper = ContextThemeWrapper(this, R.style.TableRowStyle)
+        val row = TableRow(contextThemeWrapper)
         val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
         row.layoutParams = layoutParams
 
@@ -146,9 +146,9 @@ class LectureFound : AppCompatActivity() {
     }
 
     private fun createDataTextView(text: String): TextView {
-        val textView = TextView(this)
+        val contextThemeWrapper = ContextThemeWrapper(this, R.style.TextViewStyle)
+        val textView = TextView(contextThemeWrapper)
         textView.text = text
-        textView.setPadding(5.dpToPx(), 5.dpToPx(), 5.dpToPx(), 5.dpToPx())
         return textView
     }
 
