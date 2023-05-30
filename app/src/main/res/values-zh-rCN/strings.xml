@@ -12,19 +12,19 @@
     <string name="Criteria_Building">建筑物</string>
 
     <string name="Building_Seoul_Choice">[首尔校区]\n 请选择您想要的建筑物！</string>
-    <string name="Seoul_1">网络大厦</string>
-    <string name="Seoul_2">法学大厦</string>
-    <string name="Seoul_3">社会科学大厦</string>
+    <string name="Seoul_1">网络大楼</string>
+    <string name="Seoul_2">法学大楼</string>
+    <string name="Seoul_3">社会科学大楼</string>
     <string name="Seoul_4">教师学习开发中心</string>
-    <string name="Seoul_5">人文科学大厦</string>
+    <string name="Seoul_5">人文科学大楼</string>
     <string name="Seoul_6">本馆</string>
 
     <string name="Building_Global_Choice">[全球校区]\n 请选择您想要的建筑物！</string>
-    <string name="Global_1">工程大厦</string>
-    <string name="Global_2">人文经商大厦</string>
-    <string name="Global_3">自然科学大厦</string>
-    <string name="Global_4">通识大厦</string>
-    <string name="Global_5">语文学大厦</string>
+    <string name="Global_1">工程大楼</string>
+    <string name="Global_2">人文经商大楼</string>
+    <string name="Global_3">自然科学大楼</string>
+    <string name="Global_4">普通教育大楼</string>
+    <string name="Global_5">语文学大楼</string>
     <string name="Global_6">百年馆</string>
 
     <string name="Time_Config">只要满足一个就可以找到</string>
