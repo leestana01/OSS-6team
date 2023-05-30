@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TableLayoutStyle">
+        <item name="android:background">@drawable/table_background</item> <!-- 배경색 설정 -->
+        <item name="android:padding">5dp</item> <!-- 셀 안쪽 여백 설정 -->
+    </style>
+
+    <style name="HeaderViewStyle" parent="android:Widget.TextView">
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/cell_background</item>
+    </style>
+
+    <style name="TableRowStyle">
+        <item name="android:background">@drawable/row_background</item> <!-- 행 배경 설정 -->
+        <item name="android:layout_marginTop">1dp</item> <!-- 행 상단 여백 설정 -->
+        <item name="android:layout_marginBottom">1dp</item> <!-- 행 하단 여백 설정 -->
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+</resources>

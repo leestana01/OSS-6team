@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="어떤 캠퍼스를 이용하시나요?"
+        android:text="@string/Notice_Campus_Choice"
         android:textSize="25dp"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:text="글로벌 캠퍼스"
+            android:text="@string/Campus_Global"
             android:textSize="23dp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"/>
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:text="서울 캠퍼스"
+            android:text="@string/Campus_Seoul"
             android:textSize="23dp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"/>

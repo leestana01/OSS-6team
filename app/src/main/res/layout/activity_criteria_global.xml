@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:gravity="center"
-        android:text="무엇을 기준으로\n 빈 강의실을 찾아드릴까요?"
+        android:text="@string/Criteria_Choice"
         android:textColor="#FFFFFF"
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:text="시간"
+            android:text="@string/Criteria_Time"
             android:textSize="23dp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"/>
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            android:text="건물"
+            android:text="@string/Criteria_Building"
             android:textSize="23dp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"/>
