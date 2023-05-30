@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HUFS 空教室查找</string>
+
+    <string name="Notice_Campus_Choice">您使用哪个校区？</string>
+    <string name="Favorite_Button">保存的\n 收藏列表</string>
+    <string name="Campus_Global">全球校区</string>
+    <string name="Campus_Seoul">首尔校区</string>
+
+    <string name="Criteria_Choice">以何为标准\n 来查找空教室呢？</string>
+    <string name="Criteria_Time">时间</string>
+    <string name="Criteria_Building">建筑物</string>
+
+    <string name="Building_Seoul_Choice">[首尔校区]\n 请选择您想要的建筑物！</string>
+    <string name="Seoul_1">网络大楼</string>
+    <string name="Seoul_2">法学大楼</string>
+    <string name="Seoul_3">社会科学大楼</string>
+    <string name="Seoul_4">教师学习开发中心</string>
+    <string name="Seoul_5">人文科学大楼</string>
+    <string name="Seoul_6">本馆</string>
+
+    <string name="Building_Global_Choice">[全球校区]\n 请选择您想要的建筑物！</string>
+    <string name="Global_1">工程大楼</string>
+    <string name="Global_2">人文经商大楼</string>
+    <string name="Global_3">自然科学大楼</string>
+    <string name="Global_4">普通教育大楼</string>
+    <string name="Global_5">语文学大楼</string>
+    <string name="Global_6">百年馆</string>
+
+    <string name="Time_Config">只要满足一个就可以找到</string>
+    <string name="Time_lec1">第一讲</string>
+    <string name="Time_lec2">第二讲</string>
+    <string name="Time_lec3">第三讲</string>
+    <string name="Time_lec4">第四讲</string>
+    <string name="Time_lec5">第五讲</string>
+    <string name="Time_lec6">第六讲</string>
+    <string name="Time_lec7">第七讲</string>
+    <string name="Time_lec8">第八讲</string>
+    <string name="Time_lec9">第九讲</string>
+    <string name="Time_Set_Complete">设置完成</string>
+
+    <string name="Found_Lecture">找到了符合条件的空教室！</string>
+    <string name="Favorites_Lecture">收藏列表！</string>
+    <string name="Found_Check">检查</string>
+    <string name="Found_Classroom">教室</string>
+    <string name="Found_Day">星期</string>
+    <string name="Found_Times">时间（讲课）</string>
+    <string name="Save_CheckBox">保存检查清单</string>
+    <string name="Delete_CheckBox">检查清单**删除**</string>
+    <string name="Save_Complete">已保存至收藏夹！</string>
+    <string name="Delete_Complete">已从收藏夹删除！</string>
+</resources>
