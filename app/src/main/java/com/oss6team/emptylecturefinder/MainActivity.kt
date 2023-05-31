@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO) //다크모드 비활성화
-
         setContentView(R.layout.activity_main)
 
         val seoul_btn = findViewById<View>(R.id.seoul_btn) as ImageButton
