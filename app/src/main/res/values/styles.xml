@@ -12,11 +12,11 @@
         <item name="android:textSize">20sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">2dp</item>
-        <item name="android:background">@drawable/cell_background</item>
+        <item name="android:background">@drawable/table_cell_background</item>
     </style>
 
     <style name="TableRowStyle">
-        <item name="android:background">@drawable/row_background</item> <!-- 행 배경 설정 -->
+        <item name="android:background">@drawable/table_row_background</item> <!-- 행 배경 설정 -->
         <item name="android:layout_marginTop">1dp</item> <!-- 행 상단 여백 설정 -->
         <item name="android:layout_marginBottom">1dp</item> <!-- 행 하단 여백 설정 -->
     </style>

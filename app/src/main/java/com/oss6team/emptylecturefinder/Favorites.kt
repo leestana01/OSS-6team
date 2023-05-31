@@ -25,6 +25,9 @@ class Favorites : AppCompatActivity() {
         deleteButton = findViewById(R.id.deleteButton)
 
         val file = File(getExternalFilesDir(null), "favorites.txt")
+        if (!file.exists()) {
+            file.createNewFile()
+        }
         val data = readDataFromFile(file)
 
         deleteButton.setOnClickListener {
