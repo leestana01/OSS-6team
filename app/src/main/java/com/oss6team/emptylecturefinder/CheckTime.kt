@@ -18,6 +18,7 @@ class CheckTime : AppCompatActivity() {
         val andOr = findViewById<Switch>(R.id.and_or_swith)
         val submit = findViewById<View>(R.id.set_button)
 
+
         val checkboxesIds = listOf(
             R.id.checkbox_1st_class,
             R.id.checkbox_2nd_class,

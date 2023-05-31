@@ -7,4 +7,5 @@
         android:layout_height="match_parent"
         android:src="@drawable/splash_image"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
