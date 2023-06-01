@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#433F4A"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:background="#605C5C"
+        android:ems="10"
+        android:inputType="text"
+        android:text="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHUFS 빈 강의실 찾기"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:text="\n\t\t\t\t\t\t\원하시는 강의실을 찾았어요!"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="370dp"
+        android:layout_height="485dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78">
+
+        <!-- 첫 번째 로우 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="강의실"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="시간"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <!-- 두 번째 로우 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="5123"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0,1,2,3,4,5,6"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- 세 번째 로우 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="5124"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="2,3,4,5,6"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <!-- 세 번째 로우 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="5125"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="4,5,6,7,8"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- 세 번째 로우 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="5126"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="6,7,8"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+        <!-- 세 번째 로우 -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="5127"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="1,2,3"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </TableRow>
+
+
+        <!-- 추가적인 로우들을 필요에 따라 반복적으로 추가. -->
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
+        android:text="되돌아가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
