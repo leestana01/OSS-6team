@@ -4,19 +4,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
-import android.widget.Switch
 import android.widget.Toast
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 
+
 class CheckTime : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_time)
 
         val campus = intent.getIntExtra("campus", 0)
-        val andOr = findViewById<Switch>(R.id.and_or_swith)
-        val submit = findViewById<View>(R.id.set_button)
+        val button = findViewById<View>(R.id.button)
+        val submit = findViewById<View>(R.id.button3)
 
         val checkboxesIds = listOf(
             R.id.checkbox_1st_class,
@@ -47,12 +49,15 @@ class CheckTime : AppCompatActivity() {
             val intent = Intent(this@CheckTime, LectureFound::class.java)
             intent.putIntegerArrayListExtra("lecture", ArrayList(isCheckMap.values.toList()))
             intent.putExtra("campus", campus)
-            if (andOr.isChecked) {
-                intent.putExtra("andOr", 1)
-            } else {
-                intent.putExtra("andOr", 0)
-            }
             startActivity(intent)
         }
     }
 }
+
+
+
+
+
+
+
+
