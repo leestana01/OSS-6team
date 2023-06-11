@@ -4,202 +4,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Main"
-    tools:context=".CheckTime">
+    android:background="#433F4A"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="360dp"
-        android:layout_height="306dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/set_button"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/campusName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#605C5C"
+        android:text="@string/Campus_Global"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Time_Notice1"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/and_or_swith"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campusName" />
 
+    <TextView
+        android:id="@+id/notice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Time_Notice2"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice"/>
+
+    <ToggleButton
+        android:id="@+id/and_or_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/Time_Config1"
+        android:textOn="@string/Time_Config2"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="@drawable/toggle_thumb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice2" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/and_or_toggle">
 
         <CheckBox
-
             android:id="@+id/checkbox_1st_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:background="@drawable/custom_checkbox"
-            android:textColor="#ffffffff"
-            android:fontFamily="@font/suite"
-            android:textSize="18dp"
-
-            android:text="@string/Time_lec1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
             android:id="@+id/checkbox_2nd_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:background="@drawable/custom_checkbox"
-            android:textColor="#ffffffff"
-            android:fontFamily="@font/suite"
-            android:textSize="18dp"
-            android:text="@string/Time_lec2" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_1st_class" />
 
         <CheckBox
-            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_3rd_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:textColor="#ffffffff"
-            android:fontFamily="@font/suite"
-            android:textSize="18dp"
-            android:text="@string/Time_lec3" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_2nd_class" />
 
         <CheckBox
-            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_4th_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:textColor="#ffffffff"
-            android:fontFamily="@font/suite"
-            android:textSize="18dp"
-            android:text="@string/Time_lec4" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec4"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_3rd_class" />
 
         <CheckBox
-            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_5th_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:textColor="#ffffffff"
-            android:fontFamily="@font/suite"
-            android:textSize="18dp"
-            android:text="@string/Time_lec5" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_4th_class" />
 
         <CheckBox
             android:id="@+id/checkbox_6th_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:background="@drawable/custom_checkbox"
-            android:fontFamily="@font/suite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/Time_lec6"
-            android:textColor="#ffffffff"
-            android:textSize="18dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_5th_class" />
 
         <CheckBox
             android:id="@+id/checkbox_7th_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:background="@drawable/custom_checkbox"
-            android:fontFamily="@font/suite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/Time_lec7"
-            android:textColor="#ffffffff"
-            android:textSize="18dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_6th_class" />
 
         <CheckBox
-            android:background="@drawable/custom_checkbox"
             android:id="@+id/checkbox_8th_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:textColor="#ffffffff"
-            android:fontFamily="@font/suite"
-            android:textSize="18dp"
-            android:text="@string/Time_lec8" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec8"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_7th_class" />
 
         <CheckBox
             android:id="@+id/checkbox_9th_class"
-            android:layout_width="360dp"
-            android:layout_height="34dp"
-            android:gravity="center"
-            android:background="@drawable/custom_checkbox"
-            android:fontFamily="@font/suite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/Time_lec9"
-            android:textColor="#ffffffff"
-            android:textSize="18dp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_8th_class" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
 
     <Button
         android:id="@+id/set_button"
-        android:layout_width="359dp"
-        android:layout_height="55dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="@string/Time_Set_Complete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.5" />
-
-
-    <Switch
-        android:id="@+id/and_or_swith"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="195dp"
-        android:text="@string/Time_Config"
-        android:textColor="#ffffffff"
-        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
-        tools:layout_editor_absoluteY="160dp" />
-
-    <Switch
-        android:id="@+id/and_or_swith_02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="180dp"
-        android:text="Satisfy with everything"
-        android:textSize="16dp"
-        android:textColor="#ffffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
-        tools:layout_editor_absoluteY="160dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="MainActivity"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="-10dp">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:fontFamily="@font/suite"
-        android:gravity="center"
-        android:text="[Global Campus]"
-        android:textColor="#ffffffff"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="39dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:fontFamily="@font/suite"
-        android:gravity="center"
-        android:text="please check want time!"
-        android:textColor="#ffffffff"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="89dp" />
-
-
-
-    </LinearLayout>
-
-
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

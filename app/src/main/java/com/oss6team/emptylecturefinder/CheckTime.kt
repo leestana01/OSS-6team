@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
 import android.widget.Switch
+import android.widget.TextView
 import android.widget.Toast
+import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -15,9 +17,12 @@ class CheckTime : AppCompatActivity() {
         setContentView(R.layout.activity_check_time)
 
         val campus = intent.getIntExtra("campus", 0)
-        val andOr = findViewById<Switch>(R.id.and_or_swith)
+        val andOr = findViewById<ToggleButton>(R.id.and_or_toggle)
         val submit = findViewById<View>(R.id.set_button)
 
+        if (campus == 0) {
+            findViewById<TextView>(R.id.campusName).setText(R.string.Campus_Seoul)
+        }
         val checkboxesIds = listOf(
             R.id.checkbox_1st_class,
             R.id.checkbox_2nd_class,

@@ -27,7 +27,11 @@
     <string name="Global_5">Language Building</string>
     <string name="Global_6">Centennial Building</string>
 
-    <string name="Time_Config">Satisfy at least one</string>
+
+    <string name="Time_Notice1">Please select the time you want!</string>
+    <string name="Time_Notice2">condition settings</string>
+    <string name="Time_Config1">Satisfy all</string>
+    <string name="Time_Config2">Satisfy at least one</string>
     <string name="Time_lec1">1st Period</string>
     <string name="Time_lec2">2nd Period</string>
     <string name="Time_lec3">3rd Period</string>

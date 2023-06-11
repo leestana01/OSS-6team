@@ -27,7 +27,6 @@
     <string name="Global_5">语文学大楼</string>
     <string name="Global_6">百年馆</string>
 
-    <string name="Time_Config">只要满足一个就可以找到</string>
     <string name="Time_lec1">第一讲</string>
     <string name="Time_lec2">第二讲</string>
     <string name="Time_lec3">第三讲</string>
@@ -49,4 +48,8 @@
     <string name="Delete_CheckBox">检查清单**删除**</string>
     <string name="Save_Complete">已保存至收藏夹！</string>
     <string name="Delete_Complete">已从收藏夹删除！</string>
+    <string name="Time_Notice1">请选择您所需的时间！</string>
+    <string name="Time_Notice2">条件设置</string>
+    <string name="Time_Config1">全部满足</string>
+    <string name="Time_Config2">满足一项或以上</string>
 </resources>
