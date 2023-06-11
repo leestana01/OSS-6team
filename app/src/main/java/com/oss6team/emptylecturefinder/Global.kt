@@ -20,8 +20,8 @@ class Global : AppCompatActivity() {
         //글로벌 시간표로 이동
         val global_time_btn = findViewById<View>(R.id.global_time_btn) as ImageButton
         global_time_btn.setOnClickListener {
-            val campus=1;
             val intent = Intent(this@Global, CheckTime::class.java)
+            intent.putExtra("campus", 1)
             startActivity(intent)
         }
     }

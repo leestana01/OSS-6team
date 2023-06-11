@@ -2,6 +2,8 @@
 <resources>
     <string name="app_name">HUFS 빈 강의실 찾기</string>
 
+    <string name="Splash_Msg">오늘도 모두 함께 열공!\n- HUFS 빈 강의실 찾기 -</string>
+
     <string name="Notice_Campus_Choice">어떤 캠퍼스를 이용하시나요?</string>
     <string name="Favorite_Button">저장된\n 즐겨찾기 목록</string>
     <string name="Campus_Global">글로벌 캠퍼스</string>
@@ -27,7 +29,6 @@
     <string name="Global_5">어문학관</string>
     <string name="Global_6">백년관</string>
 
-    <string name="Time_Config">하나만 만족해도 찾기</string>
     <string name="Time_lec1">1교시</string>
     <string name="Time_lec2">2교시</string>
     <string name="Time_lec3">3교시</string>
@@ -49,5 +50,9 @@
     <string name="Delete_CheckBox">체크목록 **삭제**</string>
     <string name="Save_Complete">즐겨찾기에 저장되었습니다!</string>
     <string name="Delete_Complete">즐겨찾기에서 삭제되었습니다!</string>
+    <string name="Time_Notice1">원하는 시간을 선택해주세요!</string>
+    <string name="Time_Notice2">조건 설정</string>
+    <string name="Time_Config1">모두 만족</string>
+    <string name="Time_Config2">하나 이상 만족</string>
 
 </resources>
