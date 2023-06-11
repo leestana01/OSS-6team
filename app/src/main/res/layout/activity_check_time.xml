@@ -8,207 +8,176 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="1.0"
-    tools:context=".CheckTime">
+    app:layout_constraintTop_toTopOf="parent">
 
     <TextView
-        android:id="@+id/textview0"
+        android:id="@+id/campusName"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="#605C5C"
-        android:text="Global Campus"
+        android:text="@string/Campus_Global"
         android:gravity="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPlease check want time!"
-        android:layout_marginRight="70dp"
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Time_Notice1"
         android:textColor="@color/white"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview0"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-155dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:text="Satisfy with everything"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:text="Satisfy at least one"
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintTop_toBottomOf="@+id/campusName" />
+
+    <TextView
+        android:id="@+id/notice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Time_Notice2"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice"/>
+
+    <ToggleButton
+        android:id="@+id/and_or_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="@string/Time_Config1"
+        android:textOn="@string/Time_Config2"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="@drawable/toggle_thumb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice2" />
 
 
-    <View
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/view"
-        android:layout_width="291dp"
-        android:layout_height="360dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="20dp"
         android:background="@drawable/border"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/and_or_toggle">
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1st Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_1st_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2nd Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.363"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_2nd_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_1st_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3rd Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_3rd_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_2nd_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4th Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_4th_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec4"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_3rd_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="5th Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_5th_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_4th_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="6th Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.641"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_6th_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec6"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_5th_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="7th Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_7th_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec7"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_6th_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="8th Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_8th_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec8"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_7th_class" />
 
-    <RadioButton
-        android:id="@+id/radioButton9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="9th Period"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852"
-        tools:ignore="MissingConstraints" />
+        <CheckBox
+            android:id="@+id/checkbox_9th_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time_lec9"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_8th_class" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="350dp"
-        android:layout_height="62dp"
-        android:text="COMPLETE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        android:id="@+id/set_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Time_Set_Complete"
+        android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

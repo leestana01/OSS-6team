@@ -27,7 +27,6 @@
     <string name="Global_5">어문학관</string>
     <string name="Global_6">백년관</string>
 
-    <string name="Time_Config">하나만 만족해도 찾기</string>
     <string name="Time_lec1">1교시</string>
     <string name="Time_lec2">2교시</string>
     <string name="Time_lec3">3교시</string>
@@ -49,5 +48,9 @@
     <string name="Delete_CheckBox">체크목록 **삭제**</string>
     <string name="Save_Complete">즐겨찾기에 저장되었습니다!</string>
     <string name="Delete_Complete">즐겨찾기에서 삭제되었습니다!</string>
+    <string name="Time_Notice1">원하는 시간을 선택해주세요!</string>
+    <string name="Time_Notice2">조건 설정</string>
+    <string name="Time_Config1">모두 만족</string>
+    <string name="Time_Config2">하나 이상 만족</string>
 
 </resources>

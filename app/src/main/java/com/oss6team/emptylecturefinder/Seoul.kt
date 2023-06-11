@@ -20,8 +20,8 @@ class Seoul : AppCompatActivity() {
         //서울 시간표로 이동
         val seoul_time_btn = findViewById<View>(R.id.seoul_time_btn) as ImageButton
         seoul_time_btn.setOnClickListener {
-            val campus=0;
             val intent = Intent(this@Seoul, CheckTime::class.java)
+            intent.putExtra("campus", 0)
             startActivity(intent)
         }
     }
