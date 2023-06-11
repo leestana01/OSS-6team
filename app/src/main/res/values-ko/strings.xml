@@ -2,6 +2,8 @@
 <resources>
     <string name="app_name">HUFS 빈 강의실 찾기</string>
 
+    <string name="Splash_Msg">오늘도 모두 함께 열공!\n- HUFS 빈 강의실 찾기 -</string>
+
     <string name="Notice_Campus_Choice">어떤 캠퍼스를 이용하시나요?</string>
     <string name="Favorite_Button">저장된\n 즐겨찾기 목록</string>
     <string name="Campus_Global">글로벌 캠퍼스</string>

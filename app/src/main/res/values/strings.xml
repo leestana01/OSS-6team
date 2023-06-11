@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">HUFS Empty Lecture Finder</string>
+    <string name="app_name">HUFS Empty Room Finder</string>
+
+
+    <string name="Splash_Msg">Let\'s study hard together!\n- HUFS Empty Room Finder -</string>
 
     <string name="Notice_Campus_Choice">Which campus do you use?</string>
     <string name="Favorite_Button">Saved\nFavorites</string>
