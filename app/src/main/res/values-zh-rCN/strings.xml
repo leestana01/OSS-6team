@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">HUFS 空教室查找</string>
 
-    <string name="Splash_Msg">大家努力學習吧！\n- HUFS 空教室查找 -</string>
+    <string name="Splash_Msg">大家努力學習吧！</string>
 
     <string name="Notice_Campus_Choice">您使用哪个校区？</string>
     <string name="Favorite_Button">保存的\n 收藏列表</string>
@@ -54,4 +54,5 @@
     <string name="Time_Notice2">条件设置</string>
     <string name="Time_Config1">全部满足</string>
     <string name="Time_Config2">满足一项或以上</string>
+    <string name="Splash_appname">- HUFS 空教室查找 -</string>
 </resources>
