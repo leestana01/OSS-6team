@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmptyLectureFinder"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3718135262447781~5365329860"/>
+
         <activity
             android:name=".Favorites"
             android:exported="false">
@@ -28,20 +33,6 @@
         </activity>
         <activity
             android:name=".LectureFound"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".CheckBuilding"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Criteria"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

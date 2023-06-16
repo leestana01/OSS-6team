@@ -84,12 +84,13 @@
             android:id="@+id/checkbox_2nd_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="@string/Time_lec2"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:buttonTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox_1st_class" />
+            app:layout_constraintTop_toTopOf="@id/checkbox_1st_class"
+            app:layout_constraintStart_toEndOf="@id/checkbox_1st_class" />
 
         <CheckBox
             android:id="@+id/checkbox_3rd_class"
@@ -106,12 +107,13 @@
             android:id="@+id/checkbox_4th_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="@string/Time_lec4"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:buttonTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox_3rd_class" />
+            app:layout_constraintTop_toTopOf="@id/checkbox_3rd_class"
+            app:layout_constraintStart_toEndOf="@id/checkbox_3rd_class" />
 
         <CheckBox
             android:id="@+id/checkbox_5th_class"
@@ -128,12 +130,13 @@
             android:id="@+id/checkbox_6th_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="@string/Time_lec6"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:buttonTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox_5th_class" />
+            app:layout_constraintTop_toTopOf="@id/checkbox_5th_class"
+            app:layout_constraintStart_toEndOf="@id/checkbox_5th_class" />
 
         <CheckBox
             android:id="@+id/checkbox_7th_class"
@@ -150,12 +153,13 @@
             android:id="@+id/checkbox_8th_class"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="@string/Time_lec8"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:buttonTint="#FFFFFF"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkbox_7th_class" />
+            app:layout_constraintTop_toTopOf="@id/checkbox_7th_class"
+            app:layout_constraintStart_toEndOf="@id/checkbox_7th_class" />
 
         <CheckBox
             android:id="@+id/checkbox_9th_class"
@@ -176,8 +180,26 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/Time_Set_Complete"
-        android:layout_margin="16dp"
+        android:layout_margin="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/adView" />
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3718135262447781/5888870209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </com.google.android.gms.ads.AdView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,11 +6,19 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 
 class Global : AppCompatActivity() {
+    private lateinit var mAdView : AdView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_criteria_global)
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
+
         val global_town_btn = findViewById<View>(R.id.global_town_btn) as ImageButton
         global_town_btn.setOnClickListener {
             val intent = Intent(this@Global, Global_building::class.java)

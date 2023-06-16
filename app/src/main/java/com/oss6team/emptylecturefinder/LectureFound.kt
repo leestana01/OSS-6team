@@ -11,6 +11,8 @@ import android.view.ContextThemeWrapper
 import android.view.Gravity
 import android.widget.*
 import androidx.annotation.RequiresApi
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
@@ -19,10 +21,15 @@ import java.io.InputStreamReader
 class LectureFound : AppCompatActivity() {
 
     private lateinit var tableLayout: TableLayout
+    private lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lecture_found)
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         tableLayout = findViewById(R.id.tableLayout)
 

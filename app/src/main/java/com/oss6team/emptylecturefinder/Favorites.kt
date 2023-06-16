@@ -6,6 +6,8 @@ import android.view.ContextThemeWrapper
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import java.io.BufferedReader
 import java.io.File
 import java.io.InputStreamReader
@@ -15,11 +17,15 @@ class Favorites : AppCompatActivity() {
     private lateinit var tableLayout: TableLayout
     private lateinit var deleteButton: Button
     private val checkboxMap = mutableMapOf<CheckBox, LectureFound.Classroom>()
-
+    private lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorites)
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
 
         tableLayout = findViewById(R.id.tableLayout)
         deleteButton = findViewById(R.id.deleteButton)
