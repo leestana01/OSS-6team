@@ -14,12 +14,14 @@ class Seoul_building : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_building)
 
+        // 애드몹 광고 불러오기
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
-        val campus = "0"
+        val campus = 0
 
+        // 각 건물에 대한 버튼의 클릭 리스너 설정
         setOnClickListenerForButton(R.id.btn_seoul_town1, campus, "0")
         setOnClickListenerForButton(R.id.btn_seoul_town2, campus, "1")
         setOnClickListenerForButton(R.id.btn_seoul_town3, campus, "2")
@@ -28,9 +30,11 @@ class Seoul_building : AppCompatActivity() {
         setOnClickListenerForButton(R.id.btn_seoul_town6, campus, "C")
     }
 
-    private fun setOnClickListenerForButton(buttonId: Int, campus: String, building: String) {
+    // 버튼에 대한 클릭 리스너를 설정하는 함수
+    private fun setOnClickListenerForButton(buttonId: Int, campus: Int, building: String) {
         val button = findViewById<Button>(buttonId)
         button.setOnClickListener {
+            // 'LectureFound' 액티비티로 이동. 여기서 'campus'와 'building' 파라미터를 전달
             val intent = Intent(this@Seoul_building, LectureFound::class.java)
             intent.putExtra("campus", campus)
             intent.putExtra("building", building)
@@ -38,3 +42,4 @@ class Seoul_building : AppCompatActivity() {
         }
     }
 }
+

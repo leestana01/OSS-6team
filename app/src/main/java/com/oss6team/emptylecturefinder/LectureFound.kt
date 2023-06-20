@@ -20,6 +20,7 @@ import java.io.InputStreamReader
 
 class LectureFound : AppCompatActivity() {
 
+    // UI 구성요소 선언
     private lateinit var tableLayout: TableLayout
     private lateinit var mAdView : AdView
 
@@ -27,31 +28,39 @@ class LectureFound : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lecture_found)
 
+        // 광고를 로드합니다.
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
+        // 테이블 레이아웃 참조
         tableLayout = findViewById(R.id.tableLayout)
 
+        // 저장 버튼에 대한 클릭 리스너 설정
         val saveButton: Button = findViewById(R.id.saveButton)
         saveButton.setOnClickListener {
             saveCheckedItems()
         }
 
+        // 인텐트로부터 데이터 추출
         val campus = intent.getIntExtra("campus",0)
         val building = intent.getStringExtra("building")
         val lecture = intent.getIntegerArrayListExtra("lecture") ?: arrayListOf()
 
+        // 캠퍼스에 따른 데이터 파일 선택
         val fileResId = if (campus == 0) R.raw.seoul_remaining else R.raw.global_remaining
 
+        // 파일에서 데이터 읽기
         val data = readDataFromFile(fileResId)
 
+        // 건물에 따라 데이터 필터링
         val filteredByBuilding = if (building != null) {
             data.filter { it.classroom.startsWith(building.toString()) }
         } else {
             data
         }
 
+        // 강의 시간에 따라 데이터 필터링
         val filteredByLecture = if (lecture.isNotEmpty()) {
             val checkedTimes = lecture.mapIndexed { index, isChecked ->
                 if (isChecked == 1) index + 1 else null
@@ -72,10 +81,11 @@ class LectureFound : AppCompatActivity() {
             filteredByBuilding
         }
 
+        // 데이터를 테이블에 표시
         displayDataInTable(filteredByLecture)
     }
 
-
+    // 파일에서 데이터를 읽어 Classroom 객체 목록을 생성하는 함수
     private fun readDataFromFile(resId: Int): List<Classroom> {
         val inputStream = resources.openRawResource(resId)
         val reader = BufferedReader(InputStreamReader(inputStream))
@@ -96,6 +106,7 @@ class LectureFound : AppCompatActivity() {
         return data
     }
 
+    // 데이터를 테이블에 표시하는 함수
     private fun displayDataInTable(data: List<Classroom>) {
         val headerRow = createHeaderRow()
         tableLayout.addView(headerRow)
@@ -108,6 +119,7 @@ class LectureFound : AppCompatActivity() {
         }
     }
 
+    // 테이블 헤더 로우를 생성하는 함수
     private fun createHeaderRow(): TableRow {
         val headerRow = TableRow(this)
         val layoutParams = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT)
@@ -126,6 +138,7 @@ class LectureFound : AppCompatActivity() {
         return headerRow
     }
 
+    // 테이블 헤더 텍스트 뷰를 생성하는 함수
     private fun createTableHeaderTextView(textResource: Int): TextView {
         val contextThemeWrapper = ContextThemeWrapper(this, R.style.HeaderViewStyle)
         val textView = TextView(contextThemeWrapper)
@@ -141,6 +154,7 @@ class LectureFound : AppCompatActivity() {
         return textView
     }
 
+    // 데이터 로우를 생성하는 함수
     private fun createDataRow(classroom: Classroom): TableRow {
         val contextThemeWrapper = ContextThemeWrapper(this, R.style.TableRowStyle)
 
@@ -164,6 +178,7 @@ class LectureFound : AppCompatActivity() {
         return row
     }
 
+    // 데이터 텍스트 뷰를 생성하는 함수
     private fun createDataTextView(text: String): TextView {
         val contextThemeWrapper = ContextThemeWrapper(this, R.style.TextViewStyle)
         val textView = TextView(contextThemeWrapper)
@@ -171,15 +186,16 @@ class LectureFound : AppCompatActivity() {
         return textView
     }
 
+    // 체크된 항목을 저장하는 함수
     private fun saveCheckedItems() {
         val dataToSave = mutableListOf<Classroom>()
 
-        // Traverse table rows
+        // 테이블의 모든 행을 순회
         for (i in 0 until tableLayout.childCount) {
             val row = tableLayout.getChildAt(i) as? TableRow
-            val checkbox = row?.getChildAt(0) as? CheckBox // assuming checkbox is the first child
+            val checkbox = row?.getChildAt(0) as? CheckBox // 체크박스가 첫 번째 자식이라고 가정
             if (checkbox?.isChecked == true) {
-                // Get data from other views in the row and create Classroom object
+                // 행의 다른 뷰에서 데이터를 가져와 Classroom 객체를 생성
                 val classroomName = (row.getChildAt(1) as? TextView)?.text.toString()
                 val classroomDay = (row.getChildAt(2) as? TextView)?.text.toString()
                 val classroomTimes = (row.getChildAt(3) as? TextView)?.text.toString()
@@ -188,25 +204,30 @@ class LectureFound : AppCompatActivity() {
             }
         }
 
-        // Save data to file
+        // 데이터를 파일에 저장
         saveDataToFile(dataToSave)
 
-        // Show toast message
+        // 토스트 메시지를 보여줌
         Toast.makeText(this, R.string.Save_Complete, Toast.LENGTH_SHORT).show()
 
-        // Launch new activity
+        // 새로운 액티비티를 시작
         val intent = Intent(this, Favorites::class.java)
         startActivity(intent)
     }
 
+
+    // 파일에 데이터를 저장하는 함수
     private fun saveDataToFile(data: List<Classroom>) {
         val file = File(getExternalFilesDir(null), "favorites.txt")
         file.writeText(data.joinToString("\n") { "${it.classroom}, ${it.day}, ${it.times.joinToString(" ")}" })
     }
 
+    // dp 값을 px 값으로 변환하는 확장 함수
     private fun Int.dpToPx(): Int {
         return (this * resources.displayMetrics.density).toInt()
     }
 
+    // Classroom 데이터 클래스 선언
     data class Classroom(val classroom: String, val day: String, val times: List<Int>)
 }
+
