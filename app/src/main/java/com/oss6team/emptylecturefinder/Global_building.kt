@@ -18,7 +18,7 @@ class Global_building : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
-        val campus = "1"
+        val campus = 1
 
         setOnClickListenerForButton(R.id.btn_global_town1, campus, "0")
         setOnClickListenerForButton(R.id.btn_global_town2, campus, "1")
@@ -28,7 +28,7 @@ class Global_building : AppCompatActivity() {
         setOnClickListenerForButton(R.id.btn_global_town6, campus, "5")
     }
 
-    private fun setOnClickListenerForButton(buttonId: Int, campus: String, building: String) {
+    private fun setOnClickListenerForButton(buttonId: Int, campus: Int, building: String) {
         val button = findViewById<Button>(buttonId)
         button.setOnClickListener {
             val intent = Intent(this@Global_building, LectureFound::class.java)

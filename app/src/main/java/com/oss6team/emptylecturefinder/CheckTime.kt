@@ -15,10 +15,12 @@ import com.google.android.gms.ads.AdView
 
 class CheckTime : AppCompatActivity() {
     private lateinit var mAdView : AdView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_time)
 
+        // 애드몹 광고 불러오기
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
@@ -27,9 +29,12 @@ class CheckTime : AppCompatActivity() {
         val andOr = findViewById<ToggleButton>(R.id.and_or_toggle)
         val submit = findViewById<View>(R.id.set_button)
 
+        // 캠퍼스 이름 설정
         if (campus == 0) {
             findViewById<TextView>(R.id.campusName).setText(R.string.Campus_Seoul)
         }
+
+        // 교시에 대한 체크박스 아이디들
         val checkboxesIds = listOf(
             R.id.checkbox_1st_class,
             R.id.checkbox_2nd_class,
@@ -42,8 +47,10 @@ class CheckTime : AppCompatActivity() {
             R.id.checkbox_9th_class
         )
 
+        // 각 체크박스의 체크 상태를 저장하는 맵
         val isCheckMap = mutableMapOf<Int, Int>()
 
+        // 각 체크박스에 대해 체크 변경 리스너 설정
         checkboxesIds.forEachIndexed { index, checkBoxId ->
             val checkBox = findViewById<View>(checkBoxId) as CheckBox
             isCheckMap[checkBoxId] = 0
@@ -55,7 +62,9 @@ class CheckTime : AppCompatActivity() {
             }
         }
 
+        // '제출' 버튼 클릭 리스너 설정
         submit.setOnClickListener {
+            // 'LectureFound' 액티비티로 이동. 여기서 교시 정보, 캠퍼스, andOr 정보를 전달
             val intent = Intent(this@CheckTime, LectureFound::class.java)
             intent.putIntegerArrayListExtra("lecture", ArrayList(isCheckMap.values.toList()))
             intent.putExtra("campus", campus)
